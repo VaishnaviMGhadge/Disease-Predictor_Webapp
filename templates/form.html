@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<section style="height: 30%;width: 100%; margin-top: 5%;">
+  <h2 style="margin-left: 40%;">Cancer Prediction Webapp</h2>
+  <h5 style="margin-left: 37%;">A Machine Learning Algorithm That Predict Cancer Patient</h5>
+</section>
+
+
+<form method="post" style="margin-left: 15%;margin-top: 10%;">
+  <br>
+
+  <div class="text">
+      <form method="POST">
+    <div class="tasksInput">
+        <input placeholder="radius_mean(fractional)" type="number" step=".0001" class="form-control "  name="radius_mean"  size="50" required=""><br>
+
+        <input placeholder="area_mean(fractional)" type="number" step=".0001" class="form-control " name="area_mean"  size="50" required="" ><br>
+
+        <input placeholder="perimeter_mean(fractional)" type="number" step=".0001" class="form-control "  name="perimeter_mean"  size="50" required=""><br>
+
+        <input placeholder="area_worst(fractional)" type="number" step=".0001" class="form-control "   name="area_worst" size="50" required=""><br>
+
+        <input placeholder="perimeter_worst(fractional)" type="number" step=".0001" class="form-control "  name="perimeter_worst" size="50" required=""><br>
+
+        <input placeholder="area_se(fractional)" type="number" step=".0001" class="form-control "  name="area_se"size="50"  required=""><br>
+
+        
+        <button type="submit" class="btn btn-outline-success" style="margin-left:20%;height: 40px;width: 20%;">Predict</button>
+    
+    </div>
+
+</form>
+
+{% endblock %}
+
+
+
+

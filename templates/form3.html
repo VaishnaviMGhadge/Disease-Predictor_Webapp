@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style type="text/css">
+  #wgtmsr option{
+  width:150px;   
+}
+</style>
+
+
+<section style="height: 30%;width: 100%; margin-top: 5%;">
+  <h2 style="margin-left: 40%;">Liver disease Prediction Webapp</h2>
+  <h5 style="margin-left: 37%;">A Machine Learning Algorithm That Predict Liver disease</h5>
+</section>
+<form method="post" style="margin-left: 15%;margin-top: 10%;">
+  <br>
+
+  <div class="text">
+    <div class="tasksInput">
+        <input placeholder="Enter current age" type="number" class="form-control "  name="age"  size="50" required=""><br>
+  
+        <input placeholder="Enter Total_Bilirubin" type="number" step=".0001" class="form-control "   name="Total_Bilirubin" size="50" required=""><br>
+
+        <input placeholder="Enter Direct_Bilirubin" type="number" step=".0001" class="form-control "  name="Direct_Bilirubin" size="50" required=""><br>
+
+        <input placeholder="Enter Alkaline_Phosphotase" type="number" class="form-control "  name="Alkaline_Phosphotase" size="50"  required=""><br>
+
+        <input placeholder="Enter Alamine_Aminotransferase" type="number" class="form-control "  name="Alamine_Aminotransferase" size="50"  required=""><br><p></p>
+        </div>
+        <div class="text">
+    <div class="tasksInput">
+    <div class="form-check">
+      Gender:
+      <input type="radio" name="Gender"  id="sex" value="0">Male
+      <input type="radio" name="Gender"  id="sex" value="1">Female
+      
+    </div>
+    
+  </select>
+  </div>
+       
+  </div>
+ <!--<input placeholder="Enter Aspartate_Aminotransferase" type="number" class="form-control "  name=" Aspartate_Aminotransferase" size="50"  required=""><br>-->
+        
+
+        <button type="submit" class="btn btn-outline-success" style="margin-left:20%;height: 40px;width: 20%;">Predict</button>
+    
+    </div>
+
+</form>
+
+{% endblock %}
+
+
+
+

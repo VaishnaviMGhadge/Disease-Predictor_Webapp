@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<section  style="height: 30%;width: 100%; margin-top: 5%;">
+  <h2 style="margin-left: 40%;">Heart Disease Prediction Webapp</h2>
+  <h5 style="margin-left: 37%;">A Machine Learning Algorithm That Predict Heart disease Patient</h5>
+</section>
+
+
+<form method="post" style="margin-left: 15%;margin-top: 10%;">
+  <br>
+  <div class="text">
+      <form method="POST">
+    <div class="tasksInput">
+        <input placeholder="enter current age" type="number"  class="form-control "  name="age" size="50" required=""><br>
+
+        <input placeholder="Enter 1 for Male And 0 for female" type="number" class="form-control " name="male" size="50" required="" ><br>
+
+        <input placeholder="Enter Ciggrate per day" type="number"  class="form-control "  name="cigsPerDay"  size="50" required=""><br>
+
+        <input placeholder="Enter cholestrol " type="number"  class="form-control "   name="totChol" size="50" required=""><br>
+
+        <input placeholder="Enter diaBP" type="number"  class="form-control "  name="diaBP" size="50" required=""><br>
+
+        <input placeholder=" Enter sysBP" type="number" class="form-control "  name="sysBP"size="50"  required=""><br>
+
+
+        <input placeholder=" Enter glucose level" type="number"  class="form-control "  name="glucose" size="50" required=""><br>
+
+
+        <a href="result.html"><button type="submit" class="btn btn-danger">Submit </button></a><br>
+    
+    </div>
+  
+</form>
+
+{% endblock %}
+
+
+
+

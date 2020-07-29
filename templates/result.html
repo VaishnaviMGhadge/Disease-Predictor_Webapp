@@ -1,0 +1,44 @@
+ 
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+<!--<section class="new" style="height: 30%;width: 100%;margin-top: 5%;">-->
+	<style type="text/css">
+		body{
+			background: url('positive.jpg');
+		}
+	</style>
+  <h2 style="margin-left: 40%; ">Cancer Prediction Webapp</h2>
+ </section>
+ <!-- Button trigger modal -->
+{% if y_pred==1%}
+
+
+<div id="content">
+<article style="margin:20px">
+  <h1 style="color: green; top: 30px;"> type of cancer is:Malignant</h1>
+  <p>Don't worry .Take a proper medical treatement and stay safe.Be Positive</p>
+  <blockquote>Medical studies prove that positive thinking is powerful in many ways. It might not be a cure for cancer or a method of treatment, but it's certainly a helpful tool for anyone who has been diagnosed. Studies show thinking positively is beneficial to overall health.</blockquote>
+
+</div>
+
+
+{% endif %}
+
+{% if y_pred==0 %}
+<article style="margin:20px">
+<h1 style="color: red; text-align: center;text-overflow: ellipsis; top: 300%;">type of cancer is:Benign</h1>
+<div>
+	<p><b>Don't worry.Take a proper medical treatement and stay safe.</b></p>
+	<blockquote>Medical studies prove that positive thinking is powerful in many ways. It might not be a cure for cancer or a method of treatment, but it's certainly a helpful tool for anyone who has been diagnosed. Studies show thinking positively is beneficial to overall health.</blockquote>
+</div>
+
+{% endif %}
+
+
+
+{% endblock %}

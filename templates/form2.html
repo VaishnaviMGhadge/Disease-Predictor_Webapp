@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<section style="height: 30%;width: 100%; margin-top: 5%;">
+  <h2 style="margin-left: 40%;">Kidney disease Prediction Webapp</h2>
+  <h5 style="margin-left: 37%;">A Machine Learning Algorithm That Predict Kidney disease</h5>
+</section>
+
+
+<form method="post" style="margin-left: 15%;margin-top: 10%;">
+  <br>
+
+  <div class="text">
+      <form method="POST">
+    <div class="tasksInput">
+        <input placeholder="Enter current age" type="number" step=".0001" class="form-control "  name="age"  size="50" required=""><br>
+
+        <input placeholder="Enter blood pressure" type="number" step=".0001" class="form-control " name="bp"  size="50" required="" ><br>
+
+        <input placeholder="Enter sg Level" type="number" step=".0001" class="form-control "  name="sg"  size="50" required=""><br>
+
+        <input placeholder="Enter al level" type="number" step=".0001" class="form-control "   name="al" size="50" required=""><br>
+
+        <input placeholder="Enter su level" type="number" step=".0001" class="form-control "  name="su" size="50" required=""><br>
+
+        <input placeholder="Enter wheather rbc level is normal or abnormal" type="string" class="form-control "  name="rbc"size="50"  required=""><br>
+
+        <input placeholder="Enter bgr level" type="number" step=".0001" class="form-control "  name="bgr"size="50"  required=""><br>
+
+        <input placeholder="Enter bu level" type="number" step=".0001" class="form-control "  name="bu"size="50"  required=""><br>
+
+
+        <input placeholder="Enter hemoglobin" type="number" step=".0001" class="form-control "  name="hemo" required=""><br>
+
+
+        <input placeholder="enter 'Yes' if pe is present and 'No' if not" type="number" step=".0001" class="form-control "  name="pe"size="50"  required=""><br>
+
+        <button type="submit" class="btn btn-outline-success" style="margin-left:20%;height: 40px;width: 20%;">Predict</button>
+    
+    </div>
+
+</form>
+
+{% endblock %}
+
+
+
+

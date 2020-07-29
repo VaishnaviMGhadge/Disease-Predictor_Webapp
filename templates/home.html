@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<title>Home</title>
+
+
+</head>
+    <style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 108px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+
+
+
+
+  <div class= "container">
+
+     <div class="col-md-8">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+        
+  </div>
+
+    <h3 style="margin-top: 10%;">Details </h3>
+    <p>Welcome to the home page of the app.</p>
+    <p>This is mainly created for giving some little bit of information of brest cancer and heart disease and Liver Disease.
+      <h3>Brest Cancer</h3>
+      A cancer that forms in the cells of the breasts.
+	Breast cancer can occur in women and rarely in men.
+	Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast.
+	Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery.<p>
+        <p>So to create awareness about both heart disese and brest cancer;this webapp is made.
+        </p>
+        <hr>
+    </p>
+    <h3>Heart Disease</h3>
+    <p>Heart disease describes a range of conditions that affect your heart. Diseases under the heart disease umbrella include blood vessel diseases, such as coronary artery disease; heart rhythm problems (arrhythmias); and heart defects you're born with (congenital heart defects), among others</p>
+
+    <h3>Liver Disease</h3>
+    <p>Chronic liver disease in the clinical context is a disease process of the liver that involves a process of progressive destruction and regeneration of the liver parenchyma leading to fibrosis and "cirrhosis" Chronic liver disease" refers to disease of the liver which lasts over a period of six months. It consists of a wide range of liver pathologies which include inflammation chronic hepatitis  liver hepatocellular carcinoma. The entire spectrum need not be experienced.
+</p>
+    
+
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+
+
+{% endblock %}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <title></title>
+</head>
+
+<style type="text/css">
+  
+    input[type=number]{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+  }
+  body{
+  background-image:url('positive.jpg');
+}
+
+
+.new{
+    padding: 30px;
+  position: relative;
+  background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+  background-size: 500% 500%;
+  animation: change-gradient 5s ease-in-out infinite;
+}
+@keyframes change-gradient {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+body {
+  height: 100%;
+} 
+<style type="text/css">
+.new{
+    padding: 30px;
+  position: relative;
+  background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+  background-size: 500% 500%;
+  animation: change-gradient 5s ease-in-out infinite;
+}
+@keyframes change-gradient {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*You can use any kind of background here.*/
+  background: transparent;
+
+}
+
+canvas {
+  display: block;
+  position: relative;
+  zindex: 1;
+  pointer-events: none;
+}
+
+#content {
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left:-50%;
+  margin-top: 10%;
+  color: silver;
+  font-family: verdana;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: inline-block;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+</style>
+
+
+<body >
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">ML</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/cancer">Cancer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/heart">Heart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/liver">Liver</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

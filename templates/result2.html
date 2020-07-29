@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--<section class="new" style="height: 30%;width: 100%;">
+  <h2 style="margin-left: 40%;">Diabetes Predictor</h2>
+ 
+</section>-->
+<style type="text/css">
+	img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+{%if y_pred==0%}:
+	<div id="content";>
+  <h1 style="color: green;">Great You Don't Have kidney disese</h1>
+  <IMG SRC="https://media.giphy.com/media/fxsqOYnIMEefC/giphy.gif">
+</div>
+<canvas id="canvas"></canvas>
+{%endif%}
+
+{% if y_pred==1 %}
+<h1 style="color: red;">You have kidney disese</h1>
+<IMG SRC="https://media.tenor.com/images/64b7789f3469c73736383b4848803710/tenor.gif" width="400px" height="200px">
+{% endif %}
+
+% if y_pred==2 %}
+<h1 style="color: red;">You have kidney disese</h1>
+<IMG SRC="https://media.tenor.com/images/64b7789f3469c73736383b4848803710/tenor.gif" width="400px" height="200px">
+{% endif %}
+{% endblock %}
+
+
+
+

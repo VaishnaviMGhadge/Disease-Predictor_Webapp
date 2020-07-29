@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--<section class="new" style="height: 30%;width: 100%;">
+  <h2 style="margin-left: 40%;">Diabetes Predictor</h2>
+ 
+</section>-->
+<style type="text/css">
+	img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+{%if y_pred==2%}:
+	<div id="content">
+
+<h1 style="color: green;margin-left:10%;margin-top:2px;">You are  Liver patient</h1>
+</div>
+
+<canvas id="canvas"></canvas>
+{%endif%}
+
+{% if y_pred==1%}
+<div id="content">
+<h1 style="color: green;margin-left: 25%;margin-top: 15%;">You are not  Liver patient</h1>
+</div>
+
+{% endif %}
+{% endblock %}
+
+
+
+
